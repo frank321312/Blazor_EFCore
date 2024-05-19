@@ -1,0 +1,75 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlazorAppClient
+build_property.RootNamespace = BlazorAppClient
+build_property.ProjectDir = /home/pc/EFPostgres_Blazor/BlazorAppClient/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/pc/EFPostgres_Blazor/BlazorAppClient
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/Layout/LoginLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTG9naW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Db3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9XZWF0aGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/Componentes/Botones/BotonEnviar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRlcy9Cb3RvbmVzL0JvdG9uRW52aWFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-je69oucdki
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/Componentes/Botones/BotonGoogle.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRlcy9Cb3RvbmVzL0JvdG9uR29vZ2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-wshxkkamhj
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/Componentes/Inputs/InputForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRlcy9JbnB1dHMvSW5wdXRGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-57tuhdd1kp
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-glj5u9gx3p
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-lzgo8e8el7
+
+[/home/pc/EFPostgres_Blazor/BlazorAppClient/Components/Pages/Form.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Gb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-y9m0nhygpf

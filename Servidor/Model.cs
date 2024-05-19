@@ -2,9 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using Servidor.Entidades;
 using System.Reflection;
 
-public class AplcactionContext : DbContext
+public class AplcactionDbContext : DbContext
 {
-    public AplcactionContext(DbContextOptions options) : base(options)
+    public AplcactionDbContext(DbContextOptions options) : base(options)
     {
     }
 
@@ -15,9 +15,9 @@ public class AplcactionContext : DbContext
         // modelBuilder.Entity<Usuario>().Property(x => x.Nombre).HasMaxLength(45);
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-        modelBuilder.Entity<Comentario>().HasOne(x => x.Usuario)
-        .WithMany(x => x.Comemtarios)
-        .HasForeignKey(x => x.UsuarioId);
+        // modelBuilder.Entity<Comentario>().HasOne(x => x.Usuario)
+        // .WithMany(x => x.Comemtarios)
+        // .HasForeignKey(x => x.UsuarioId);
     }
 
     public DbSet<Usuario> Usuarios => Set<Usuario>();

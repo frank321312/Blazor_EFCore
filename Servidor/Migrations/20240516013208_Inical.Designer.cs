@@ -9,7 +9,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Servidor.Migrations
 {
-    [DbContext(typeof(AplcactionContext))]
+    [DbContext(typeof(AplcactionDbContext))]
     [Migration("20240516013208_Inical")]
     partial class Inical
     {

@@ -1,18 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
-using AutoMapper;
 using Servidor.Entidades;
 using Servidor.DTos;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace Servidor.Controllers;
 
 [ApiController]
-[Route("/api/comentarios")]
-public class ComentarioControllers: ControllerBase
+[Route("/api/[controller]")]
+public class ComentarioController: ControllerBase
 {
-    private readonly AplcactionContext context;
+    private readonly AplcactionDbContext context;
     private readonly IMapper mapper;
-    public ComentarioControllers(AplcactionContext context, IMapper mapper)
+    public ComentarioController(AplcactionDbContext context, IMapper mapper)
     {
         this.context = context;
         this.mapper = mapper;
@@ -23,12 +23,7 @@ public class ComentarioControllers: ControllerBase
     {
         var comentario = mapper.Map<Comentario>(comentarioCreacionDTO);
         // var usuario = await context.Usuarios.FindAsync(comentarioCreacionDTO.UsuarioId);
-
-        // if (usuario == null)
-        // {
-        //     return NotFound("Usuario no encontrado");    
-        // }
-        // comentario.Usuario = usuario;
+        
         context.Add(comentario);
         await context.SaveChangesAsync();
 

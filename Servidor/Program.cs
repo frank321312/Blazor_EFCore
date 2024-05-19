@@ -1,14 +1,17 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.ResponseCompression;
+using Servidor.Servicios;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// builder.Services.AddRazorPages();
+builder.Services.AddRazorPages();
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<AplcactionContext>(opciones => opciones.UseNpgsql(
+builder.Services.AddDbContext<AplcactionDbContext>(opciones => opciones.UseNpgsql(
     "name=DefaultConnection"));
 
+builder.Services.AddScoped<IUsuario, GestionUsuario>();
 // builder.Services.AddDbContext<AplcactionContext>(opt => opt.UseNpgsql(""))
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -25,13 +28,14 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-// app.UseStaticFiles();
+app.UseStaticFiles();
 
-// app.UseRouting();
+app.UseRouting();
 
 app.UseAuthorization();
 
-// app.MapRazorPages();
+app.MapRazorPages();
 app.MapControllers();
 
 app.Run();
+ 

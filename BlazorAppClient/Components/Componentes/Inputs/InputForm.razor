@@ -1,0 +1,10 @@
+<input class="input-form" type="@tipoInput" placeholder="@valorPlaceholder" value="@Valor">
+
+@code {
+    [Parameter]
+    public string? valorPlaceholder { get; set; }
+    [Parameter]
+    public string? tipoInput { get; set; }
+    [Parameter]
+    public string? Valor { get; set; }
+}

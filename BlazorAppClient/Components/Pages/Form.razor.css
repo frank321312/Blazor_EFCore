@@ -1,0 +1,112 @@
+/* Contenedor formulario */
+
+.contenedor-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to top, #6F5CE4, #451bee);
+}
+
+/* Estilo de formulario */
+
+.formulario {
+    width: 310px;
+    display: flex;
+    padding: 32px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -2px 2px 20px 1px #000;
+    flex-shrink: 0;
+}
+
+/* Titulo del formulario */
+
+.titulo-form {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de imagen */
+
+.contenedor-img {
+    width: 100%;
+    text-align: center;
+}
+
+.img-user {
+    width: 100px;
+    margin-bottom: 20px;
+} 
+
+/* Estilos para inputs */
+
+.input-form {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1.5px 9px;
+    background-color: #D9D9D9;
+    transition-property: background-color;
+    transition-duration: .3s;
+    width: 100%;
+    height: 29px;
+    margin-bottom: 16px;
+}
+
+.input-form:hover {
+    background-color: #e1deee;
+    border-bottom: 1.5px solid #b8b6b6;
+}
+
+.input-form:focus {
+    background-color: #e1deee;
+    border-bottom: 1.5px solid #b8b6b6;
+}
+
+/* Estilos para boton enviar */
+
+.btn-enviar {
+    transition-property: background-color;
+    transition-duration: .3s;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    height: 29px;
+    background-color: #451bee;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.btn-enviar:hover {
+    background-color: #5945df;
+}
+
+.btn-enviar:active {
+    transition-duration: .1s;
+    background-color: #351adf;
+}
+
+/* Estilos para boton google */
+
+.boton {
+    transition-property: background-color;
+    transition-duration: .3s;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    height: 29px;
+    background-color: rgb(217 217 217);
+    margin-bottom: 16px;
+}
+
+.boton:hover {
+    background-color: #b9b7b7;
+}
+
+.boton:active {
+    transition-duration: .1s;
+    background-color: #979494;
+}

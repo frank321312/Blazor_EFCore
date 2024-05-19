@@ -1,0 +1,58 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+@inject HttpClient Http
+@using Servidor.Entidades
+@using Servidor.DTos
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<form action="">
+    <input type="text" value="@Nombre">
+    <input type="email" value="@Email">
+    <input type="password" value="@Password">
+    <button type="submit" @onclick="() => NuevoUsuario(Nombre, Email, Password)">Enviar</button>    
+</form>
+
+@code {
+    private int currentCount = 0;
+    private List<Usuario> usuarios = new List<Usuario>();
+    private string Nombre { get; set; } = "Pepito";
+    private string Email { get; set; } = "Milango@gmail.com";
+    private string Password { get; set; } = "123456789";
+    @* private UsuarioCreacionDTO usuario = new(); *@
+    
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        Http.BaseAddress = new Uri("http://localhost:5255");
+
+        usuarios = await Http.GetFromJsonAsync<List<Usuario>>("api/usuario");
+    }
+
+    private async Task NuevoUsuario(string nombre, string email, string password)
+    {
+        var user = new UsuarioCreacionDTO {Nombre = nombre, Email = email, Password = password}; 
+
+        string url = "http://localhost:5255/api/usuario";
+
+        HttpResponseMessage respuesta = await Http.PostAsJsonAsync(url, user);
+
+        if (respuesta.IsSuccessStatusCode)
+        {
+            System.Console.WriteLine("Los datos se enviaron correctamente");
+        }
+        else
+        {
+            System.Console.WriteLine("Error, los datos no se enviaron");
+        }
+    }
+}
